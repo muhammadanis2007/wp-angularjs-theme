@@ -1,0 +1,8 @@
+<div class="page col-1 dark-blue-sea" ng-controller="searchCtrl as searchs">
+    <search-form></search-form>
+    <article ng-repeat="postlst in posts | filter : searchtxt">
+        <h2><a class="green-sea-color animated fadeInUp" ng-href="{{postlst.permalink}}">{{postlst.title}}</a></h2>
+        <div class="page-home-content dark-blue-sea light-grey-color animated fadeInUp" ng-bind-html="postlst.experct"></div>
+    </article>
+
+</div>

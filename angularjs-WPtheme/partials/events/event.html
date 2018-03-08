@@ -1,0 +1,22 @@
+<div ng-controller="eventsCtrl as events">
+    <div class="page col-1 dark-blue-sea">
+        <h3 class="page-head-left light-grey-color"  ng-bind-html="htmlSafe(event.title.rendered)" ></h3>
+
+        <div class="col-1 dim-black user-card">
+            <div class="bio">
+                <div class="circletag">
+                    <img src="{{event.userImageUrl}}">
+                </div>
+                <div class="green-sea-color event-info">
+                    <span ng-bind-html="event.date.toString() |  date :  'fullDate'"></span>
+                </div>
+
+            </div>
+            <div class="page-content  green-sea light-grey-color user-content" ng-bind-html="htmlSafe(event.content.rendered)"></div>
+        </div>
+
+
+    </div>
+
+
+</div>

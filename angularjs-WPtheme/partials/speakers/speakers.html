@@ -1,0 +1,23 @@
+<div ng-controller="speakersListCtrl as speakersList">
+    <div class="page col-1 dark-blue-sea">
+        <h3 class="page-head-left light-grey-color ">Our Speakers</h3>
+<div  class="page-content light-grey-color" >ING MidWest delivers a variety of presentations, including “Getting to Know American Muslims and their Faith,” “Muslim Women Beyond the Stereotypes,” “A History of Muslims in America,” and “Muslim Contributions to Civilization.” Our speakers are trained to deliver these interactive presentations using colorful digital presentations and Q & A with the audience.
+    Speakers become certified by ING after a rigorous process of professional development, testing, and observation in a live setting by veteran speakers. ING speakers adhere to strict guidelines which are outlined in <a href="https://ing.org/ing-and-the-first-amendment-center/" target="_blank" >ING and the First Amendment Center</a>. These guidelines emphasize adherence to the highest level of academic neutrality and objectivity when teaching about religion.</div>
+        <ul class="user-list">
+            <li class="user-list-box animated fadeInUp" ng-repeat="speaker in speakers | orderBy:'tilte'">
+
+                <div class="circletag c-img">
+                    <img src="{{speaker.featured_image}}">
+                </div>
+                <a href="{{speaker.link}}">
+                    <h3>{{speaker.title.rendered}}</h3>
+                    <span>{{speaker.ids_speaker_customfields.ids_speaker_location.toString()}}</span>
+                    <span>{{speaker.ids_speaker_customfields.ids_speaker_email.toString()}}</span>
+                </a>
+                <div class="clear-f"></div>
+            </li>
+        </ul>
+
+    </div>
+    <div class="clear-f"></div>
+</div>

@@ -1,0 +1,24 @@
+<div ng-controller="membersCtrl as members">
+    <div *ngIf="member" class="page col-1 dark-blue-sea">
+        <h3 class="page-head-left light-grey-color">{{member.title.rendered}}</h3>
+
+        <div class="col-1 dim-black user-card">
+            <div class="bio">
+                <div class="circletag">
+                    <img src="{{member.userImageUrl}}">
+                </div>
+                <div class="fa fa-star  green-sea-color bio-info">
+                    <p ng-bind-html="member.designation"></p>
+                </div>
+                <div class="fa fa-envelope green-sea-color bio-info">
+                    <p ng-bind-html="member.email"></p>
+                </div>
+            </div>
+            <div class="page-content  green-sea light-grey-color user-content" ng-bind-html="member.content.rendered"></div>
+        </div>
+
+
+    </div>
+
+
+</div>

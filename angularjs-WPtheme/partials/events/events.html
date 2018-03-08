@@ -1,0 +1,22 @@
+<div ng-controller="eventsListCtrl as eventsList">
+    <div class="page col-1 dark-blue-sea">
+        <h3 class=" page-head-left light-grey-color ">Our Events</h3>
+
+        <ul class="event-list">
+            <li class="event-list-box animated fadeInUp" ng-repeat="event in events">
+
+                <a href="{{event.link}}">
+                    <img src="{{event.featured_image}}">
+                    <div class="overlay green-sea">
+                        <h3 class="date light-grey-color" ng-bind="event.ids_event_cfields.ids_event_date.toString() | date :  'mediumDate' "></h3>
+                        <span class="title light-grey-color" ng-bind="event.title.rendered"></span>
+                    </div>
+
+                </a>
+                <div class="clear-f"></div>
+            </li>
+        </ul>
+
+    </div>
+
+</div>
