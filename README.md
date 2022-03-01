@@ -1,2 +1,2 @@
-# wp-angularjs-theme
-AngularJS-WPTheme
+# WORDPRESS CMS AND ANGULAR FRONTEND SPA THEME
+Wordpress, PHP WP PLugins Development, ANGULAR, JAVASCRIPT, HTML5 AND CSS 3.0
